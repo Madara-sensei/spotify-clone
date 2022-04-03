@@ -1,0 +1,21 @@
+.login {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.login > img {
+  object-fit: contain;
+  width: 400px;
+  height: 400px;
+}
+.login > .MuiButtonBase-root {
+  width: 180px;
+  color: black;
+  background-color: rgb(47, 187, 42);
+}

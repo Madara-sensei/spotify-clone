@@ -1,0 +1,119 @@
+.playbar {
+  display: flex;
+  flex-direction: row;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 100vw;
+  background-color: rgb(17, 17, 17);
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid rgb(53, 53, 53);
+  justify-content: space-between;
+}
+
+.playbar__info {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+.playbar__info > img {
+  object-fit: contain;
+  height: 56px;
+  width: 56px;
+}
+
+.playbar__title {
+  margin-left: 20px;
+}
+.playbar__title > h4 {
+  font-weight: 400;
+  color: white;
+  cursor: pointer;
+}
+.playbar__title > h4:hover {
+  text-decoration: underline;
+}
+.playbar__title > p {
+  cursor: pointer;
+  font-size: small;
+  color: grey;
+  margin-top: -20px;
+}
+.playbar__title > p:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.playbar__infoButtons {
+  margin-left: 10px;
+  padding: 20px;
+  color: grey;
+}
+.playbar__infoButtons > .MuiSvgIcon-root {
+  margin-left: 7px;
+}
+.playbar__infoButtons > svg:hover {
+  color: white;
+}
+.playbar__actions {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.playbar__time {
+  width: 40vw;
+  color: grey;
+}
+.playbar__actionsButtons {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.playbar__actionsButtons > button {
+  border: none;
+  background: transparent;
+  color: white;
+}
+.playbar__actionsButtons > .MuiSvgIcon-root {
+  margin: 10px;
+
+  height: 30px;
+}
+.playbar__actionsButtons > .MuiSvgIcon-root > svg {
+  height: 30px;
+}
+
+.playbar__time {
+  display: flex;
+  align-items: center;
+}
+.playbar__time > .MuiSlider-root {
+  color: rgb(52, 219, 46);
+}
+.playbar__time > p {
+  font-size: small;
+  margin: 7px;
+}
+
+.playbar__options {
+  color: grey;
+  display: flex;
+  width: 10vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playbar__options > .MuiSvgIcon-root {
+  margin-left: 8px;
+}
+.playbar__options > .MuiSlider-root {
+  color: rgb(52, 219, 46);
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.playbar__actionsButtons__Shuffle {
+  color: rgb(52, 219, 46);
+}

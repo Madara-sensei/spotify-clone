@@ -1,0 +1,81 @@
+.likedSongItem {
+  display: flex;
+  background-color: transparent;
+  place-items: center;
+  flex: 1;
+  padding: 5px;
+  height: 56px;
+  border-radius: 4px;
+  justify-content: space-between;
+}
+.likedSongItem:hover {
+  background-color: rgb(51, 50, 54);
+}
+
+.likedSongItem:hover .likedSongItem__moreOptions {
+  visibility: visible;
+}
+.likedSongItem:hover .likedSongItem__info > p {
+  visibility: hidden;
+}
+.likedSongItem:hover > .likedSongItem__info > .MuiSvgIcon-root {
+  visibility: visible;
+}
+.likedSongItem > p {
+  color: grey;
+}
+.likedSongItem__info {
+  display: flex;
+  place-items: center;
+}
+.likedSongItem__info > .MuiSvgIcon-root {
+  position: absolute;
+  color: white;
+  visibility: hidden;
+  margin-left: 10px;
+}
+.likedSongItem__info > img {
+  object-fit: contain;
+  height: 40px;
+  width: 40px;
+}
+.likedSongItem__info > p {
+  margin: 20px;
+  color: grey;
+}
+.likedSongItem__title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.likedSongItem__title > h4 {
+  color: white;
+}
+.likedSongItem__title > p {
+  font-size: small;
+  margin-top: -20px;
+  color: grey;
+}
+.likedSongItem__options {
+  display: flex;
+  align-items: center;
+}
+
+.likedSongItem__options > .MuiSvgIcon-root {
+  color: rgb(52, 219, 46);
+  margin-right: 10px;
+}
+.likedSongItem__options > p {
+  font-size: medium;
+  color: grey;
+  margin-right: 5px;
+}
+
+.likedSongItem__moreOptions {
+  visibility: hidden;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+}

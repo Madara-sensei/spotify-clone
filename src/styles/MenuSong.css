@@ -1,0 +1,62 @@
+.menuSong {
+  display: flex;
+  max-height: 1000px;
+}
+.menuSong__contextMenu {
+  background-color: rgb(41, 41, 41);
+
+  width: 243px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.menuSong__contextMenu > ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.menuSong__contextMenu > ul > li {
+  width: 240px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.menuSong__contextMenu > ul > li:hover {
+  background-color: rgb(126, 126, 126);
+}
+.menuSong__contextMenu > ul > li > button,
+.playlist__name > button {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 15px;
+  width: 100%;
+}
+.menuSong__contextMenu > ul > li > button > span {
+  flex: 0;
+}
+
+.menuSong:hover > .playlist__items {
+  visibility: visible;
+}
+.playlist__items {
+  visibility: hidden;
+  box-shadow: 0 16px 24px rgb(0 0 0 / 30%), 0 6px 8px rgb(0 0 0 / 20%);
+  background-color: rgb(41, 41, 41);
+  overflow-y: scroll;
+}
+
+.playlist__name:hover {
+  background-color: rgb(126, 126, 126);
+}

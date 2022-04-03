@@ -1,0 +1,108 @@
+.playlist {
+  display: flex;
+  flex-direction: column;
+  flex: 0.87;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.likedTitles__header,
+.playlist__header {
+  padding: 80px;
+  display: flex;
+  color: white;
+  place-items: center;
+}
+.likedTitles__header {
+  background: linear-gradient(hsl(258, 47%, 51%), hsl(240, 5%, 7%));
+}
+.playlist__header {
+  background: linear-gradient(hsl(0, 0%, 25%), hsl(240, 5%, 7%));
+}
+.likedTitles__header > img {
+  object-fit: contain;
+  width: 232px;
+  height: 232px;
+  box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+}
+.playlist__img {
+  width: 232px;
+  height: 232px;
+  box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+  background-color: rgb(34, 34, 34);
+  color: grey;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+}
+.playlist__img > img {
+  width: 232px;
+  height: 232px;
+}
+.likedTitles__headerText {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 232px;
+  justify-content: space-between;
+}
+.likedTitles__headerText > h1 {
+  font-size: 96px;
+  cursor: pointer;
+}
+.likedTitles__headerText > p {
+  margin-bottom: -70px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.likedTitles__profile {
+  margin-top: -50px;
+  display: flex;
+  align-items: center;
+}
+.likedTitles__profile > span {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.likedTitles__profile > span > .MuiAvatar-root {
+  margin-right: 3px;
+  height: 24px;
+  width: 24px;
+}
+.likedTitles__profile > p {
+  color: rgb(143, 142, 148);
+  margin-left: 5px;
+}
+.likedTitles__playButton > button {
+  background: transparent;
+  border: none;
+}
+.likedTitles__playButton > button {
+  margin-left: 25px;
+  color: white;
+  background-color: rgb(57, 182, 53);
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.likedTitles__columnsHeader {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  color: rgb(140, 140, 145);
+  border-bottom: 1px solid rgb(78, 78, 78);
+  margin: 0px 30px 0px 30px;
+}
+
+.likedTitles__songsPlaylist {
+  background-color: hsl(240, 5%, 7%);
+  flex: 1;
+}
+.likedTitles__songs {
+  margin: 20px 30px 0px 30px;
+}

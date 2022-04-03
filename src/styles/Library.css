@@ -1,0 +1,13 @@
+.library {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  color: white;
+  flex: 0.87;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.library__playlists {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}

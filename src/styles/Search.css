@@ -1,0 +1,160 @@
+.search {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  color: white;
+  flex: 0.87;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.search__container {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+.search__songsResults {
+  flex: 1;
+}
+.search__bestResultItem {
+  background-color: rgb(29, 29, 29);
+  width: 340px;
+  height: 200px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.search__bestResultItem > img {
+  box-shadow: 0px 5px 10px rgba(15, 15, 15, 0.473);
+  border-radius: 5px;
+  object-fit: contain;
+  width: 95px;
+  height: 95px;
+}
+
+.search__mainResult {
+  display: flex;
+  gap: 10px;
+}
+.search__bestResultItem__info {
+  margin-top: -30px;
+  display: flex;
+  place-items: center;
+  color: rgb(128, 128, 129);
+  align-items: center;
+}
+.search__bestResultItem__info > p {
+  margin-left: 5px;
+}
+.search__bestResultItem__info > h3 {
+  color: rgb(233, 233, 233);
+  margin-left: 30px;
+  flex: 1;
+}
+.search__bestResultItem:hover {
+  background-color: rgb(37, 37, 37);
+}
+.search__bestResultItem:hover .search__bestResultItem__play {
+  visibility: visible;
+}
+
+.search__bestResultItem__play {
+  visibility: hidden;
+  box-shadow: 0px 5px 10px rgba(15, 15, 15, 0.473);
+  border: none;
+  color: white;
+  background-color: rgb(57, 182, 53);
+  width: 45px;
+  height: 45px;
+  border-radius: 56px;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+.search__favoriteGenres {
+  display: flex;
+  flex-direction: column;
+}
+.search__favoriteGenresItem {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap:10px
+}
+
+.genreItem {
+  display: flex;
+  width: 390px;
+  height: 220px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.genreItem > h1 {
+  flex: 1;
+}
+.genreItem > img {
+  margin-top: 115px;
+  margin-left: 100px;
+  transform: rotate(30deg);
+  object-fit: contain;
+  width: 120px;
+  height: 120px;
+}
+
+.search__recentSearchItems {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.recentSearchItem {
+  background-color: rgb(29, 29, 29);
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 274px;
+  padding: 10px;
+}
+
+.recentSearchItem:hover {
+  background-color: rgb(37, 37, 37);
+}
+.recentSearchItem > img {
+  box-shadow: 0px 5px 10px rgba(15, 15, 15, 0.473);
+  object-fit: contain;
+  width: 170px;
+  height: 170px;
+  border-radius: 170px;
+}
+.recentSearchItem > h4 {
+  font-weight: 500;
+}
+.recentSearchItem > p {
+  color: rgb(158, 158, 158);
+  margin-top: -15px;
+  font-weight: 600;
+  font-size: small;
+}
+.recentSearchItem > .MuiSvgIcon-root {
+  background-color: black;
+  border-radius: 10px;
+}
+.search__recentSearchItem__play {
+  visibility: hidden;
+  position: absolute;
+  box-shadow: 0px 5px 10px rgba(15, 15, 15, 0.473);
+  border: none;
+  color: white;
+  background-color: rgb(57, 182, 53);
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  margin-left: 115px;
+}
+
+.recentSearchItem:hover .search__recentSearchItem__play {
+  visibility: visible;
+}

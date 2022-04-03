@@ -1,0 +1,82 @@
+.editPopup {
+  color: white;
+  display: flex;
+  background-color: rgb(48, 48, 48);
+  width: 524px;
+  height: 376px;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+}
+.editPopup__title {
+  display: flex;
+  place-items: center;
+  height: 76px;
+}
+.editPopup__title > h2 {
+  flex: 1;
+}
+.editPopup__img {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 4px 60px rgb(0 0 0 / 50%);
+
+  color: grey;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+}
+.editPopup__img > img {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+
+.editPopup__form {
+  display: flex;
+}
+
+.editPopup__inputs {
+  width: 280px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.editPopup__inputName > input,
+.editPopup__inputDescription > input {
+  background: hsla(0, 0%, 100%, 0.1);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 0 12px;
+  width: 100%;
+}
+.editPopup__inputName > input {
+  height: 40px;
+}
+.editPopup__inputDescription > input {
+  height: 124px;
+}
+
+.editPopup__save {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.editPopup__save > button {
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 32px;
+}
+.editPopup__options > p {
+  font-size: small;
+}

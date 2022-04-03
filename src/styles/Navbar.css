@@ -1,0 +1,94 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 87vw;
+  background-color: transparent;
+  align-items: center;
+  height: 60px;
+  padding: 7px;
+}
+
+.navbar__left {
+  display: flex;
+  flex: 1;
+  place-items: center;
+}
+.navbar__arrows,
+.navbar__search {
+  margin-left: 20px;
+}
+.navbar__arrows {
+  color: white;
+  margin-left: 20px;
+}
+
+.navbar__arrows > .MuiSvgIcon-root {
+  margin-left: 15px;
+  background-color: black;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.navbar__search {
+  border-radius: 30px;
+  height: 40px;
+  width: 20vw;
+  background-color: white;
+  display: flex;
+  place-items: center;
+}
+.navbar__search > input {
+  background: transparent;
+  width: 80%;
+  border: none;
+  outline-width: 0;
+}
+.navbar__search > .MuiSvgIcon-root {
+  margin-left: 7px;
+}
+.navbar__subscribe {
+  margin-right: 30px;
+}
+.navbar__subscribe > button {
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 150px;
+  height: 35px;
+}
+.navbar__profile {
+  margin-right: 30px;
+}
+.navbar__profile > button {
+  display: flex;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  align-items: center;
+  padding: 5px;
+  width: 150px;
+  height: 35px;
+}
+
+.navbar__profile > button > .MuiAvatar-root {
+  height: 24px;
+  width: 24px;
+  margin-right: 5px;
+}
+
+.navbar__profile > button > span {
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.navbar__profile > button > .MuiSvgIcon-root {
+  margin-left: 10px;
+}
